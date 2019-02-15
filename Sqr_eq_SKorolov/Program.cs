@@ -27,7 +27,10 @@ namespace Sqr_eq_SKorolov
                 Console.WriteLine(message);
                 line = Console.ReadLine();
                 parsed = double.TryParse(line, out value);
-                if ((value == 0) & (parameterName == 'a')) { parsed = false; } // Special condition for parameter 'a'
+                if ((value == 0) && (parameterName == 'a'))
+                {
+                    parsed = false; // Special condition for parameter 'a'
+                }
                 wrongEnter = !parsed;
             }
             return value;
